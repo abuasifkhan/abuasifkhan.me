@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<h3>All Posts</h3>
+<table class="table table-hover">
+{% for post in paginator.posts %}
+    <tr>
+    <td>
+        <strong><a href="{{ post.url | prepend: site.baseurl }}"><h3>{{ post.title }}</h3></a></strong>
+        <p>
+        Published on <strong>{{ post.date | date: '%B %d, %Y' }}</strong> |
+        Time <strong>{{ post.date | date: '%H:%M' }}</strong> |
+        Tagged <strong>{{ post.categories }}</strong>
+        </p>
+    </td>
+    </tr>
+{% endfor %}
+</table>
+
+<nav>
+  <ul class="pager">
+  {% if paginator.previous_page %}
+    <li class="previous"><a href="{{ paginator.previous_page_path }}">Previous</a></li>
+  {% else %}
+    <li class="previous disabled"><span>Previous</span></li>
+  {% endif %}
+        <span>Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <li class="next"><a href="{{ paginator.next_page_path }}">Next</a></li>
+  {% else %}
+    <li class="next disabled"><span>Next</span></li>
+  {% endif %}
+  </ul>
+</nav>

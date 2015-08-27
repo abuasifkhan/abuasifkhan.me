@@ -1,0 +1,18 @@
+title: আসিফের হ-য-ব-র-ল
+description: জানি জানার শেষ নাই, তবু শুরু করতে দোষ কোথায়??
+baseurl: ""
+url: ""
+encoding: "utf-8"
+exclude: ["favicon.svg", "README.md"]
+keep_files: [".git", "CNAME"]
+markdown: redcarpet
+markdown_ext: "md"
+paginate_path: /page:num
+permalink: /:categories/:title.html
+safe: false
+timezone: Asia/Dhaka
+localurl: "http://127.0.0.1:4000"
+paginate: 5
+paginate_path: "/posts/page:num"
+gems:
+  - jekyll-sitemap
