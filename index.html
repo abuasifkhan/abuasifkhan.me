@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<h3>All Posts</h3>
+<h3>সকল পোস্ট</h3>
 <table class="table table-hover">
 {% for post in paginator.posts %}
     <tr>
@@ -9,8 +9,7 @@ layout: default
         <strong><a href="{{ post.url | prepend: site.baseurl }}"><h3>{{ post.title }}</h3></a></strong>
         <p>
         Published on <strong>{{ post.date | date: '%B %d, %Y' }}</strong> |
-        Time <strong>{{ post.date | date: '%H:%M' }}</strong> |
-        Tagged <strong>{{ post.categories }}</strong>
+        Time <strong>{{ post.date | date: '%H:%M' }}</strong>
         </p>
     </td>
     </tr>
