@@ -9,7 +9,7 @@ permalink: /algorithm/permutation1.html
 
 তো কাজে ফিরে আসি।
 
-<b>বিন্যাস কি?</b>
+## বিন্যাস কি?
 
 <img class="aligncenter" alt="File:Permutations RGB.svg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Permutations_RGB.svg/121px-Permutations_RGB.svg.png" width="121" height="227" />
 
@@ -31,9 +31,9 @@ CAB
 CBA
 ```
 
-আমার মাথায় আর একটাও আসতেছে না এগুলা ছাড়া। দেখতেই পাচ্ছো তিনটা বই তুমি মোট ছয়টা উপায়ে সাজাতে পারতেছো। আসলে যেকোনো সংখ্যক জিনিসই তুমি সাজাতে পারবে সর্বাধিক তার ফ্যাকটোরিয়াল সংখ্যক উপায়ে। অর্থাৎ n টা জিনিস তুমি সাজাতে পারবে n! উপায়ে। বিশ্বাস হচ্ছে না আমার কথা? চলো তাইলে তোমাকে একটা প্রমান দি। C++ এর algorithm ক্লাসের একটা মেথড আছে <a title="cplusplus.com" href="http://www.cplusplus.com/reference/algorithm/next_permutation/" target="_blank">next_permutation()</a>. এটা তোমাকে  সাম্ভাব্য সকল বিন্যাস "<a href="http://en.wikipedia.org/wiki/Lexicographical_order" target="_blank">Lexicographical order</a>" (হুম, আমাকেও কয়েকবার পড়তে হয়েছিলো এটা সঠিকভাবে উচ্চারনের জন্য) generate করে দিতে পারবে। কোডটা দিলাম, আপাতত কোডের বিভিন্ন জিনিস চেন্জ করে এবং ঘাটাঘাটি করে মজা নিতে থাকো। আর "লেক্সিকোগ্রাফিক্যাল অর্ডার" সম্পর্কে একটু একটু আইডিয়া পাইতে পারবে নিচের কোডটার আউটপুট গবেষনা করলে। তাছাড়াও সামনের পর্বগুলাতে একটু একটু আলোচনা করা হবেই এটা নিয়ে, আমরা প্রোগ্রামে permutation generate করার সময় এই অর্ডারটাই ফলো করি।
+আমার মাথায় আর একটাও আসতেছে না এগুলা ছাড়া। দেখতেই পাচ্ছো তিনটা বই তুমি মোট ছয়টা উপায়ে সাজাতে পারতেছো। আসলে যেকোনো সংখ্যক জিনিসই তুমি সাজাতে পারবে সর্বাধিক তার ফ্যাকটোরিয়াল সংখ্যক উপায়ে। অর্থাৎ n টা জিনিস তুমি সাজাতে পারবে n! উপায়ে। বিশ্বাস হচ্ছে না আমার কথা? চলো তাইলে তোমাকে একটা প্রমান দি। C++ এর algorithm ক্লাসের একটা মেথড আছে <a title="cplusplus.com" href="http://www.cplusplus.com/reference/algorithm/next_permutation/" target="_blank">next_permutation()</a>. এটা তোমাকে সাম্ভাব্য সকল বিন্যাস <a href="http://en.wikipedia.org/wiki/Lexicographical_order" target="_blank">Lexicographical order</a> (হুম, আমাকেও কয়েকবার পড়তে হয়েছিলো এটা সঠিকভাবে উচ্চারনের জন্য) generate করে দিতে পারবে। কোডটা দিলাম, আপাতত কোডের বিভিন্ন জিনিস চেন্জ করে এবং ঘাটাঘাটি করে মজা নিতে থাকো। আর "লেক্সিকোগ্রাফিক্যাল অর্ডার" সম্পর্কে একটু একটু আইডিয়া পাইতে পারবে নিচের কোডটার আউটপুট গবেষনা করলে। তাছাড়াও সামনের পর্বগুলাতে একটু একটু আলোচনা করা হবেই এটা নিয়ে, আমরা প্রোগ্রামে permutation generate করার সময় এই অর্ডারটাই ফলো করি।
 
-<strong>STL ব্যবহার করে কোড করা:</strong>
+## STL ব্যবহার করে কোড করা
 
 ```
 #include <iostream>
