@@ -2,8 +2,7 @@
 layout: post
 title: "Lightweight Set of Boolean ওরফে Bitmask"
 date: 2012-12-20 12:00:00
-categories: Algorithm
-permalink: /algorithm/lightweight-set-of-boolean-bitmask.html
+permalink: /lightweight-set-of-boolean-bitmask.html
 ---
 তোমাদের জানা আছে কম্পিউটারে integer কিছু বিটের সমন্বয়ে স্টোর হয়ে থাকে। আমরা যেমন Boolean অ্যারে ব্যবহার করি বিভিন্ন কাজে, তেমন আমরা একটা integer এর বিটগুলা নিয়ে এই একই কাজ করতে পারি। এটাকে এজন্য বলা হয় Lightweight small Set of Boolean. তবে যখন অ্যারে সাইজ কম থাকে অর্থাৎ ১৬ অথবা ৩২ এর মধ্যে থাকে তখনই আমরা bitwise operation এর সাহায্যে অনেক সহজে এবং efficient way তে integer কে বুলিয়ান অ্যারের মত ব্যবহার করতে পারি । আমরা আজ কিভাবে এই বিটগুলার তথ্য ব্যবহার করে বিভিন্ন মজার মজার অপারেশন করা যায় তা দেখবো। প্রথমে তোমাদের মনে করিয়ে দিলাম যদিও জানা আছে সবার, বুলিয়ান অপারেশনের জন্য `&` মানে গুণ করা, এবং `|` এর অর্থ যোগ করা। (আগেই বলে রাখা উচিৎ এই টিউটোরিয়ালটি পড়ার আগে বুলিয়ান অপারেশনগুলা অর্থাৎ AND, OR, XOR, NOR, এবং bit shifting সম্পর্কে একটু জেনে রাখলে বুঝতে সুবিধা হবে)
 

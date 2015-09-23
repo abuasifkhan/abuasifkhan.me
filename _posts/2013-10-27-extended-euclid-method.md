@@ -2,8 +2,7 @@
 layout: post
 title: "খাতা-কলমে Extended Euclid Method"
 date: 2013-10-27 12:00:00
-categories: Algorithm
-permalink: /algorithm/extended-euclid-method.html
+permalink: /extended-euclid-method.html
 ---
 আগেরদিন Extended Euclidean Algorithm কিভাবে কাজ করে দেখিয়েছিলাম। এবার দেখাবো এটা খাতা-কলমে কিভাবে বের করা যায়। খুব সহজ একটা ম্যাথ প্রবলেম। অ্যালগরিমটা লেখার আগে এই লেখাটা দেয়া উচিৎ ছিলো। এজন্য অনেকেই খুব ভালো বুঝতে পারে নাই এবং ডিটেইলস জানতে চেয়েছিলো আমার কাছে। যাইহোক, এখন লিখে ফেলতেছি। আগে উদাহরন হিসেবে দিয়েছিলাম a=120 এবং b=23. GCD(a, b) = 1.
 

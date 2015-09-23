@@ -8,10 +8,9 @@ keep_files: [".git", "CNAME"]
 markdown: redcarpet
 markdown_ext: "md"
 paginate_path: /page:num
-permalink: /:categories/:title.html
+permalink: /:title.html
 safe: false
 timezone: Asia/Dhaka
-localurl: "http://127.0.0.1:4000"
 paginate: 5
 paginate_path: "/posts/page:num"
 gems:

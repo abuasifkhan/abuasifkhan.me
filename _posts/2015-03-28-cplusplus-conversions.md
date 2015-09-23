@@ -2,8 +2,7 @@
 layout: post
 title: "সি++ দিয়ে বিভিন্নরকম Conversions"
 date: 2015-03-28 12:00:00
-categories: Algorithm
-permalink: /algorithm/cplusplus-conversions.html
+permalink: /cplusplus-conversions.html
 ---
 প্রোগ্রামিং করার সময় প্রায়ই অনেকরকম কনভার্সনের দরকার পড়ে। সি++ এ অনেকভাবেই এবং অনেক সহজে এসব কনভার্সন করা যায়। যদিও আমার personal favorite `stringstream`. কিছু উদাহরন দিচ্ছি নিচে, আশা করি ব্যাখ্যাও করা লাগবে না। :)
 

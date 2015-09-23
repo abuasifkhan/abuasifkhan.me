@@ -2,8 +2,7 @@
 layout: post
 title: "সি++ এর Priority Queue"
 date: 2013-10-27 12:00:00
-categories: Algorithm
-permalink: /algorithm/cplusplus-priority-queue.html
+permalink: /cplusplus-priority-queue.html
 ---
 Priority Queue হলো সি++ একটা STL যা প্রোগ্রামে ইনপুটগুলাকে সর্টেড অবস্থায় রেখে দেয়। অর্থাৎ এটা এক প্রকার অ্যারে, আরো ভাল ভাবে বলা যায় ভেক্টর যার উপাদানগুলা সর্টেড অবস্থায় থাকে। ডিফল্ট অবস্থায় এটা হাইয়ার টু লোয়ার প্রেসিডেন্সে (MAX priority queue) উপাদানগুলা সর্ট করে রাখে। তবে কাজের ভিন্যতার জন্য লোয়ার টু হাইয়ার (MIN priority queue) প্রেসিডেন্সেও সর্ট করা যায়। তবে এটা ডিফল্ট ভাবে করা থাকে না।
 

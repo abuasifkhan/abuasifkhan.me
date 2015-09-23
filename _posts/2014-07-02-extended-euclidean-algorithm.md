@@ -2,8 +2,7 @@
 layout: post
 title: "Extended Euclidean Algorithm এবং একটুখানি Modular Multiplicative Inverse"
 date: 2014-07-02 12:00:00
-categories: Algorithm
-permalink: /algorithm/extended-euclidean-algorithm.html
+permalink: /extended-euclidean-algorithm.html
 ---
 GCD (Greatest Common Divisor) বের করার জন্য হয়তো সবাই ইউক্লিডের পদ্ধতি ব্যবহার করেই দেখেছ। এটা আমার জানা মনে দুটি সংখ্যার GCD বের করার সব থেকে সহজ এবং efficient উপায়। যাহোক Extended Euclidean Algorithm জানার জন্য এই পদ্ধতিটাই কাজে লাগে। এখন দেখাই আগে কিভাবে GCD বের করতে হয় যদিও প্রায় সবার জানা আছে।
 

@@ -2,8 +2,7 @@
 layout: post
 title: "বিন্যাস করা যাক (পর্ব: ২)"
 date: 2013-10-27 12:00:00
-categories: Algorithm
-permalink: /algorithm/permutation2.html
+permalink: /permutation2.html
 ---
 গতপর্বে permutation করার বেসিক জিনিসগুলা দেখানোর চেষ্টা করেছিলাম। আজকের পর্বে শেয়ার করবো কিভাবে permutation generator কোড করা যায়। কোডিং করার আগে তো আমাদের অবশ্যই জানতে হবে কিভাবে permutation generate করা হয়। আগে সেটা দেখাই।
 

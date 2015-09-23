@@ -2,8 +2,7 @@
 layout: post
 title: "Aho-Corasick দিয়ে String Matching"
 date: 2015-06-13 12:00:00
-categories: Algorithm
-permalink: /algorithm/aho-corasick.html
+permalink: /aho-corasick.html
 ---
 <p>Aho-Corasick একটা স্ট্রিং ম্যাচিং/সার্চিং অ্যালগরিদম। এই টেকনিক দিয়ে একটা স্ট্রিং-এ কিছু সাবস্ট্রিং কতবার আছে সেটা খুজে বের করা যায়। এখন তুমি ভাবতে পারো সাব-স্ট্রিং সার্চ বা কাউন্ট করার জন্য তো Knuth-Morris-Prat (KMP) algorithm আছেই, তাইলে এটার কি দরকার। হ্যা, KMP খুবই efficient একটা অ্যালগরিদম (O(n+m)) যদি একটি সাবস্ট্রিং সার্চ করা বা কাউন্ট করা হয়। যদি k সংখ্যক সাবস্ট্রিং সার্চ করতে যাও তাহলে কমপ্লেক্সিটি অনেক বেড়ে যাবে O(k*(n+m)). Aho-Corasick এই দিক দিয়ে অনেক efficient (O(k+m+n)). Aho-Corasick এ একটা Word থাকে, এবং একাধিক Dictionary থাকে। Word এর মধ্যে Dictionary গুলো আছে কিনা, থাকলে কতবার আছে এই সংক্রান্ত তথ্য খুবই সহজেই বের করতে পারবে। LightOj এ একটা প্রবলেম আছে <a href="http://www.lightoj.com/volume_showproblem.php?problem=1427">1427 - Substring Frequency (II)</a>. এটা সলভ করতে করতে Aho-Corasick শেখার চেষ্টা করবো।<!--more--></p>
 প্রবলেমে T একটা স্ট্রীং, এবং n টা কোয়েরি আছে। প্রতিটা কোয়েরিতে P<sub>i</sub> একটা স্ট্রীং। তোমাকে খুজতে হবে T তে P<sub>i </sub>কতবার আছে।
