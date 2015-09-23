@@ -40,6 +40,7 @@ permalink: /algorithm/extended-euclid-method.html
     =>  -1 * 5 + 2 * 3 = 1
 
     =>  - 1 * 5 + 2 * ( 1 * 23 – 4 * 5 ) = 1 [ (2) নং থেকে পাই]
+    
     =>  -1 * 5 + 2 * 23 – 8 * 5
 
     => 2 * 23 – 9 * 5 = 1
@@ -56,7 +57,7 @@ permalink: /algorithm/extended-euclid-method.html
 
 অর্থাৎ (120 mod 23 ) ≡ -9 এর মানে 120 এর multiplicative inverse modulo 23 হলো -9. Multiplicative Inverse কে গণিতের ভাষায় এভাবেও লেখা হয়:
 
-    <p>120<sup>-1</sup>≡ -9 (mod 23)<p>
+120<sup>-1</sup>≡ -9 (mod 23)
 
 এবং (23 mod 120) ≡ 47 একই রকমভাবে এর মানে 23 এর multiplicative inverse modulo 120 হবে 47. সুতরাং 23<sup>-1</sup>≡ 47 (mod 120).
 
