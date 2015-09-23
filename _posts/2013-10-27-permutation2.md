@@ -9,13 +9,13 @@ permalink: /algorithm/permutation2.html
 
 ## নিজে কিভাবে করবে?
 
-[Imgur](http://i.imgur.com/swiqezS.png)
+![Imgur](http://i.imgur.com/swiqezS.png)
 
 উপরের ছবিটার মত ধরে নাও “ABC” এই তিনটা character গুলাকে আমরা বিন্যাস করতে চাই। তো এই বিশাল কর্ম সম্পাদনের জন্য আমাদেরকে  প্রথমে বিভিন্ন পজিশনে বর্ণগুলাকে fixed করে রেখে পরের পজিশনের কথা বিবেচনা করতে হবে। যদি একদম শেষ পজিশনে এসে যাই তাইলে প্রথম থেকে শেষ পর্যন্ত fixed করে রাখা পজিশনগুলার সবগুলা character একসাথে প্রিন্ট করে দিবো। যেমন: প্রথমে আমরা 1 no. পজিশনে ‘A’ fixed রেখেছি, তারপর 2 no. পজিশনে ‘B’, তারপর 3 no. পজিশনে রেখেছি ‘C’. সুতরাং প্রথম বিন্যাস আমরা পাচ্ছি “ABC”. এভাবে পরে 2 no. পজিশনে ‘C’ fixed করেছি। তাইলে 3 no. পজিশনে কেবল আমরা ‘B’ কেই বসাতে পারি। তাই পরের বিন্যাসটা আমরা পাচ্ছি “ACB”. এভাবে ট্রীতে আস্তে আস্তে উপরে লেভেলে যেয়ে যেয়ে এবং বিভিন্ন পজিশনে বিভিন্ন character বসিয়ে আমরা সকল সাম্ভাব্য বিন্যাস generate করতে পারবো।
 
 যদি 4 টা character দেয়া থাকে বা তার বেশি? তখন কিভাবে করবে? উপরে যেভাবে করেছো সেভাবেই করে যাবে। আচ্ছা জিনিসটা সহজ করার জন্য নিচে “ABCD” characterগুলা থেকে সকল বিন্যাস গঠন করার প্রথম ধাপটা দিলাম।
 
-[Imgur](http://i.imgur.com/MpZ5ss6.png)
+![Imgur](http://i.imgur.com/MpZ5ss6.png)
 
 1 no. পজিশনে প্রথমে ‘A’ fixed রেখে বাকি characterগুলা অর্থাৎ “BCD” এর বিন্যাসগুলা প্রথম চিত্রের মত করে করে ফেলো। তারপর প্রথম পজিশনে ‘B’ কে fixed রেখে “ACD” characterগুলা আগের মত উপায়ে বিন্যাস করে ফেলো। এভাবে বাকি দুইটা করে ফেললে তুমি মোট 4! = 24 টা সাম্ভাব্য বিন্যাস গঠন করতে পারবে। কাজ সহজ, খাটনি একটু এই আর কি। :P
 
@@ -59,9 +59,9 @@ int main(){
 
 আপাতত এ পর্যন্তই। পরবর্তি পর্বে n-তম বিন্যাস কিভাবে বের করা যায় সেটা দেখানোর চেষ্টা করবো। আরও ভালো জানতে শাফায়েত ভাইয়ের লেখা <a href="http://www.shafaetsplanet.com/planetcoding/?p=1266" target="_blank">আর্টিকেলটা </a>পড়তে পারো। আর যা যা শিখলে সেগুলা প্রাকটিস করার জন্য কিছু প্রবলেম দিলাম। Try to solve them:
 
-<a href="http://uva.onlinejudge.org/external/5/524.html" target="_blank">524 - Prime Ring Problem</a>
-<a href="http://uva.onlinejudge.org/external/107/10776.html" target="_blank">10776 - Determine The Combination</a>
-<a href="http://uva.onlinejudge.org/external/2/291.html" target="_blank">291 - The House of Santa Claus</a>
-<a href="http://uva.onlinejudge.org/external/6/677.html" target="_blank">677 - All walks of length n from the first node</a>
+* <a href="http://uva.onlinejudge.org/external/5/524.html" target="_blank">524 - Prime Ring Problem</a>
+* <a href="http://uva.onlinejudge.org/external/107/10776.html" target="_blank">10776 - Determine The Combination</a>
+* <a href="http://uva.onlinejudge.org/external/2/291.html" target="_blank">291 - The House of Santa Claus</a>
+* <a href="http://uva.onlinejudge.org/external/6/677.html" target="_blank">677 - All walks of length n from the first node</a>
 
 Keep coding... :)
